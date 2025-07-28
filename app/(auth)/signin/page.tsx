@@ -34,7 +34,6 @@ export default function Page() {
             redirect: false,
             email: user.email,
             password: user.password,
-            callbackUrl: "/dashboard"
         });
         if(res?.error){
             console.log("Login Error", res?.error)
