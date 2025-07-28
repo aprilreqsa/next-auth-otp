@@ -33,7 +33,8 @@ export default function Page() {
         const res = await signIn("credentials",{
             redirect: false,
             email: user.email,
-            password: user.password
+            password: user.password,
+            callbackUrl: "/dashboard"
         });
         if(res?.error){
             console.log("Login Error", res?.error)
