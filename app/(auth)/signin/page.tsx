@@ -46,7 +46,7 @@ export default function Page() {
         }else {
             setTimeout(()=> {
                 router.push("/dashboard")
-            },1000)
+            },2000)
             
             setIsLoading(false)
         }
