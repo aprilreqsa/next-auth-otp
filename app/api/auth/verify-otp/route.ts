@@ -1,6 +1,6 @@
 import { prisma } from "@/app/libs/prisma";
 
-export async function POST(req:Request,context:{params:{email:string}}){ 
+export async function POST(req:Request){ 
     const { email, otp} = await req.json();
     const user = await prisma.users.findUnique({
         where: {
